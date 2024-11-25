@@ -27,10 +27,9 @@ whitelistMode: false
 enableForwardedWhitelist: true
 # Whitelist of allowed IP addresses
 whitelist:
-
 -0.0.0.0
 # Toggle basic authentication for endpoints
-basicAuthMode: false
+basicAuthMode: true
 # Basic authentication credentials
 basicAuthUser:
   username: xellss
@@ -47,6 +46,8 @@ requestProxy:
   bypass:
     - localhost
     - 127.0.0.1
+    - 0.0.0.0
+
 # Enable multi-user mode
 enableUserAccounts: false
 # Enable discreet login mode: hides user list on the login screen
